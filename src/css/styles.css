@@ -18,6 +18,7 @@
 @import url('./footer.css');
 
 /* === Gallery === */
+/* === Gallery === */
 
 .gallery {
   list-style: none;
@@ -62,9 +63,110 @@
 }
 
 .gallery-item:hover .gallery-image {
-  width: 376px;
-  height: 208px;
-  transform: translate(-50%, -50%) scale(1);
+  width: 360px;
+  height: 200px;
+  transform: translate(-50%, -50%) scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   z-index: 10;
+}
+
+.sl-overlay {
+  background-color: #4b4b5c !important;
+  opacity: 1 !important;
+}
+
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: auto;
+  height: auto;
+  padding: 0;
+  color: #ffffff !important;
+  font-size: 28px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.sl-wrapper .sl-close:hover,
+.sl-wrapper .sl-navigation button:hover {
+  opacity: 0.6;
+}
+
+.sl-wrapper .sl-navigation .sl-prev {
+  left: 24px;
+}
+
+.sl-wrapper .sl-navigation .sl-next {
+  right: 24px;
+}
+
+.sl-wrapper .sl-close {
+  top: 24px;
+  right: 32px;
+  font-size: 32px;
+}
+
+.feedback-form {
+  width: 408px !important;
+  min-height: 296px !important;
+  margin: 24px auto 0 !important;
+  padding: 24px !important;
+  background-color: #ffffff !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #000000;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4e75ff;
+}
+
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
 }
